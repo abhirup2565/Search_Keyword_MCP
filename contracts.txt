@@ -1,40 +1,81 @@
-SERVICE AGREEMENT
+MASTER SERVICE AGREEMENT
 
-This Service Agreement ("Agreement") is entered into between XYZ Solutions Pvt. Ltd. ("Service Provider") 
-and XYZ ("Client") on October 25, 2025.
+This Master Service Agreement ("Agreement") is entered into as of January 15, 2024, between:
 
-1. Scope of Work
-   The Service Provider agrees to deliver AI-powered automation tools and document analysis services.
-   All deliverables will be shared via secure cloud storage upon final payment.
+CLIENT: Acme Corporation, a Delaware corporation with principal offices at 123 Business Park, San Francisco, CA 94103
 
-2. Payment Terms
-   The Client agrees to pay 50% of the total project cost upfront and the remaining amount within 15 days of 
-   receiving the final invoice. Any delay beyond 10 days will attract a 5% late fee.
+CONTRACTOR: TechSolutions Inc., a California corporation with principal offices at 456 Innovation Drive, Palo Alto, CA 94301
 
-3. Confidentiality
-   Both parties shall maintain strict confidentiality of all proprietary information, client data, and source code.
-   Disclosure of such information without consent will result in immediate termination of the contract.
+RECITALS
 
-4. Intellectual Property
-   All deliverables, code, and documentation created under this Agreement shall remain the intellectual property
-   of the Service Provider until full payment has been received.
+WHEREAS, Client desires to retain Contractor to provide certain software development services; and
+WHEREAS, Contractor has the expertise and resources to provide such services;
 
-5. Termination
-   Either party may terminate this Agreement with 7 days written notice if the other party fails to meet obligations.
+NOW, THEREFORE, in consideration of the mutual covenants and agreements herein contained, the parties agree as follows:
 
-6. Signatures
-   This Agreement is executed electronically. The digital signature of both parties shall be considered legally binding.
+1. SERVICES
+Contractor shall provide software development, consulting, and technical support services as detailed in individual Statements of Work (SOW). Each SOW shall specify the scope, deliverables, timeline, and compensation for specific projects.
 
-SIGNED BY:
+2. TERM
+This Agreement shall commence on January 15, 2024, and continue for a period of two (2) years unless earlier terminated in accordance with Section 8.
 
-___________________________
-Abhirup Singh
+3. COMPENSATION
+Client shall pay Contractor the fees specified in each SOW. Payment terms are Net 30 days from invoice date. Late payments shall accrue interest at 1.5% per month.
 
-___________________________
-Rahul Sharma
+4. INTELLECTUAL PROPERTY
+All work product, inventions, and deliverables created by Contractor under this Agreement shall be the exclusive property of Client. Contractor hereby assigns all right, title, and interest in such work product to Client.
+
+5. CONFIDENTIALITY
+Both parties agree to maintain the confidentiality of all proprietary information disclosed during the term of this Agreement. This obligation shall survive termination for a period of five (5) years.
+
+6. WARRANTIES
+Contractor warrants that all services shall be performed in a professional and workmanlike manner. Contractor further warrants that all deliverables shall be free from defects for a period of ninety (90) days.
+
+7. LIMITATION OF LIABILITY
+In no event shall either party be liable for any indirect, incidental, special, or consequential damages arising out of this Agreement. Total liability shall not exceed the fees paid under the applicable SOW.
+
+8. TERMINATION
+Either party may terminate this Agreement with thirty (30) days written notice. Client may terminate immediately for cause, including breach of confidentiality or failure to perform services as specified.
+
+9. INDEMNIFICATION
+Contractor shall indemnify and hold harmless Client from any claims arising from Contractor's negligence or willful misconduct. Client shall indemnify Contractor from claims arising from Client's use of the deliverables.
+
+10. GOVERNING LAW
+This Agreement shall be governed by the laws of the State of California without regard to conflicts of law principles.
+
+11. ENTIRE AGREEMENT
+This Agreement, including all SOWs, constitutes the entire agreement between the parties and supersedes all prior agreements and understandings.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+ACME CORPORATION                    TECHSOLUTIONS INC.
+
+By: _________________________      By: _________________________
+Name: John Smith                    Name: Sarah Johnson
+Title: CEO                          Title: President
+Date: January 15, 2024             Date: January 15, 2024
 
 
-INVOICE DETAILS:
-Invoice ID: INV-2025-1031
-Amount Due: ₹150,000
-Due Date: November 15, 2025
+EXHIBIT A - STATEMENT OF WORK #1
+
+Project: Customer Portal Development
+Start Date: February 1, 2024
+End Date: May 31, 2024
+
+Deliverables:
+- User authentication system
+- Customer dashboard interface
+- Payment processing integration
+- Admin panel for client management
+- Documentation and training materials
+
+Compensation: $150,000 (payable in monthly installments)
+
+Milestones:
+- Phase 1 (Feb 28): Authentication system - $30,000
+- Phase 2 (Mar 31): Dashboard interface - $40,000
+- Phase 3 (Apr 30): Payment integration - $50,000
+- Phase 4 (May 31): Final delivery and training - $30,000
+
+Additional Terms:
+All work shall be performed remotely. Weekly progress meetings required. Client shall provide necessary API credentials and testing environments.
