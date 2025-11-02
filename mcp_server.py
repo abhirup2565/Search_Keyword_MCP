@@ -1,46 +1,39 @@
 """
-MCP Server using FastMCP (latest style)
----------------------------------------
+MCP Server: Keyword Search
+--------------------------
 This server exposes:
 1. A resource (`file://{path}`) that reads and returns file contents.
 2. A tool (`search_file`) that searches for a keyword within that file.
-
-Usage:
-    pip install fastmcp
-    fastmcp run mcp_server:app
 """
 
 from fastmcp import FastMCP
 import re
 import os
 
-# Initialize server
-mcp = FastMCP(
-    name="keyword_search_mcp",
-    description="MCP server that searches for keywords in files via resources.",
-    version="1.0.0"
-)
+# Initialize MCP server
+mcp = FastMCP(name="keyword_search_mcp")
 
 @mcp.resource("file://{path}")
 def read_file(path: str) -> str:
     """
     Resource: Reads a file from the given path and returns its text content.
     """
-    if not os.path.isfile(path):
-        raise FileNotFoundError(f"File not found: {path}")
+    file_path = os.path.abspath(path)
+    if not os.path.isfile(file_path):
+        raise FileNotFoundError(f"File not found: {file_path}")
 
-    # Stream reading for large files
-    with open(path, "r", encoding="utf-8", errors="replace") as f:
+    # Stream read (handles large files gracefully)
+    with open(file_path, "r", encoding="utf-8", errors="replace") as f:
         return f.read()
 
 @mcp.tool()
 def search_file(keyword: str, path: str, case_sensitive: bool = False):
     """
-    Tool: Search for a specific keyword inside a file fetched via resource.
+    Tool: Search for a specific keyword inside a file.
     
     Args:
         keyword: The text to search for.
-        path: File path (used by the file:// resource).
+        path: File path to search in.
         case_sensitive: Whether to treat keyword matching as case-sensitive.
 
     Returns:
@@ -50,10 +43,15 @@ def search_file(keyword: str, path: str, case_sensitive: bool = False):
         raise ValueError("Keyword cannot be empty or whitespace only.")
     keyword = keyword.strip()
 
-    # Fetch file content via resource
-    content = read_file(path)
+    # Read the file directly
+    file_path = os.path.abspath(path)
+    if not os.path.isfile(file_path):
+        raise FileNotFoundError(f"File not found: {file_path}")
+    
+    with open(file_path, "r", encoding="utf-8", errors="replace") as f:
+        content = f.read()
 
-    # Compile regex pattern
+    # Compile regex
     flags = 0 if case_sensitive else re.IGNORECASE
     pattern = re.compile(re.escape(keyword), flags)
 
@@ -76,4 +74,5 @@ def search_file(keyword: str, path: str, case_sensitive: bool = False):
         "occurrences": occurrences
     }
 
-
+if __name__ == "__main__":
+    mcp.run()

@@ -1,0 +1,40 @@
+SERVICE AGREEMENT
+
+This Service Agreement ("Agreement") is entered into between XYZ Solutions Pvt. Ltd. ("Service Provider") 
+and XYZ ("Client") on October 25, 2025.
+
+1. Scope of Work
+   The Service Provider agrees to deliver AI-powered automation tools and document analysis services.
+   All deliverables will be shared via secure cloud storage upon final payment.
+
+2. Payment Terms
+   The Client agrees to pay 50% of the total project cost upfront and the remaining amount within 15 days of 
+   receiving the final invoice. Any delay beyond 10 days will attract a 5% late fee.
+
+3. Confidentiality
+   Both parties shall maintain strict confidentiality of all proprietary information, client data, and source code.
+   Disclosure of such information without consent will result in immediate termination of the contract.
+
+4. Intellectual Property
+   All deliverables, code, and documentation created under this Agreement shall remain the intellectual property
+   of the Service Provider until full payment has been received.
+
+5. Termination
+   Either party may terminate this Agreement with 7 days written notice if the other party fails to meet obligations.
+
+6. Signatures
+   This Agreement is executed electronically. The digital signature of both parties shall be considered legally binding.
+
+SIGNED BY:
+
+___________________________
+Abhirup Singh
+
+___________________________
+Rahul Sharma
+
+
+INVOICE DETAILS:
+Invoice ID: INV-2025-1031
+Amount Due: ₹150,000
+Due Date: November 15, 2025
