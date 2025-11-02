@@ -13,10 +13,24 @@ An **MCP (Model Context Protocol)** server built with **FastMCP**, enabling file
 
 ---
 
-## ⚙️ Installation
+## 🧩 Installation & Setup
+
+1️ Clone the repository
 
 ```bash
-pip install fastmcp
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+```
+
+2️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+3️⃣ Run the MCP server
+
+```bash
+python mcp_server.py
 ```
 
 ---
@@ -32,7 +46,7 @@ python keyword_search_mcp.py
 ### Resources
 
 **`file://{path}`** — Reads text files
-Example: `file:///home/user/contracts.txt`
+Example: `file://./contracts.txt`
 
 ### Tools
 
@@ -97,7 +111,5 @@ Example: `file:///home/user/contracts.txt`
 | -------------------- | --------------------------------------------- |
 | `FileNotFoundError`  | File does not exist                           |
 | `ValueError`         | Empty or invalid keyword                      |
-| `PermissionError`    | Access denied                                 |
-| `UnicodeDecodeError` | Non-text file (auto-handled with replacement) |
 
 ---
