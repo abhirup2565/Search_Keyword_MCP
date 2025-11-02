@@ -18,8 +18,8 @@ An **MCP (Model Context Protocol)** server built with **FastMCP**, enabling file
 1️ Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/abhirup2565/Search_Keyword_MCP.git
+cd <Search_Keyword_MCP>
 ```
 
 2️⃣ Install dependencies
